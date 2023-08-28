@@ -1,0 +1,18 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id       String @id @default(uuid()) //Vai ser preenchido, por um unico Id gerado
+  username String @unique //Não permite que seja cadastrados novos usuarios com nome semelhante
+  name     String
+
+  created_at DateTime @default(now())
+
+  @@map("users") //Definido padrão para nome da tabela
+}
