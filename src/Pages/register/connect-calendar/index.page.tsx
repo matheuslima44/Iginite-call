@@ -35,3 +35,5 @@ export default function Register() {
     </Container>
   );
 }
+
+//bug ajustado
