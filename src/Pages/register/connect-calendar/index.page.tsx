@@ -31,6 +31,7 @@ export default function Register() {
             <ArrowRight />
           </Button>
         </ConnectItem>
+        <Button type="submit">Próximo passo</Button>
       </ConnectBox>
     </Container>
   );
