@@ -74,7 +74,7 @@ export default function Register() {
         <label>
           <Text size="sm">Nome De usuário</Text>
           <TextInput
-            prefix="ingnite.com/"
+            prefix="ignite.com/"
             placeholder="Seu-usuário"
             {...register("username")}
           />
